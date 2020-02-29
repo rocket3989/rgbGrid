@@ -62,7 +62,7 @@ function redraw() {
 function showTable(){
     outString = ""
     for(r = 0; r < rows; r++){
-        if (reverse)
+        if (reverse && (r & 1))
             for(c = cols - 1; c >= 0; c--)
                 outString += matrix[r][c] + ','
         else
@@ -192,6 +192,5 @@ function makeGrid(){
         })
     }
 }
-
 
 redraw()
