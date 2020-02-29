@@ -112,6 +112,7 @@ $('#gridBtn').click(function (){
 
 $("#reset").click(function(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+    matrix = []
     for(r = 0; r < rows; r++){
         curr = []
         for(c = 0; c < cols; c++)
